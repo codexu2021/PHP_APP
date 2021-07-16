@@ -7,8 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class PostsTableSeeder extends Seeder
 {
-    use PostFactory;
-    use UserFactory;
+
     /**
      * Run the database seeds.
      *
