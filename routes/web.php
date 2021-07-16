@@ -18,10 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/hello', function () {
+Route::get('hello', function () {
     return view('hello');
 });
-Route::get('/create', 'PostController@create')->name('create');
+Route::get('create', 'PostController@create')->name('create');
 
 Route::resource('views', 'PostController', ['only' => ['index','create','store']]);
 
