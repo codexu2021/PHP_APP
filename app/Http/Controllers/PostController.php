@@ -11,7 +11,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
-        return view('Post.index', ['posts' => $posts]);
+        return view('index', ['posts' => $posts]);
     }
     public function show(Request $request, $id)
 {
@@ -22,7 +22,7 @@ class PostController extends Controller
 }
     public function create()
     {
-        return view('Post.create');
+        return view('create');
     }
     public function store(PostRequest $request)
     {
