@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 
 class PostsTableSeeder extends Seeder
 {
+    use HasFactory;
     /**
      * Run the database seeds.
      *
