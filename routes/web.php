@@ -24,3 +24,5 @@ Route::get('/hello', function () {
 
 Route::resource('Post', 'PostController', ['only' => ['index','create','store']]);
 
+Route::get('/index', [PostController::class, 'index']);
+
