@@ -38,10 +38,7 @@
                 <td>{{ $post->subject }}</td>
                 <td>{!! nl2br(e(Str::limit($post->message, 100))) !!}
                 <p><a href="{{ route('show') }}" class="btn btn-primary btn-sm">詳細</a></p>
-
-                @if ($post->comments->count() >= 1)
-                    <p><span class="badge badge-primary">コメント：{{ $post->comments->count() }}件</span></p>
-                @endif
+                
                 </td>
                 <td class="text-nowrap">
                     <p><a href="" class="btn btn-primary btn-sm">詳細</a></p>
