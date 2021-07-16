@@ -8,6 +8,16 @@
 @include('layouts.bbsheader')
 @section('content')
 <div class="table-responsive">
+    <div class="mt-4 mb-4">
+        <a href="{{ route('Post.create') }}" class="btn btn-primary">
+            投稿の新規作成
+        </a>
+    @if (session('poststatus'))
+        <div class="alert alert-success mt-4 mb-4">
+            {{ session('poststatus') }}
+        </div>
+    @endif
+    </div>
     <table class="table table-hover">
         <thead>
         <tr>

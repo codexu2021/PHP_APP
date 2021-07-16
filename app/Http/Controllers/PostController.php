@@ -20,4 +20,22 @@ class PostController extends Controller
         'post' => $post,
     ]);
 }
+    public function create()
+    {
+        return view('Post.create');
+    }
+    public function store(PostRequest $request)
+    {
+        $savedata = [
+            'name' => $request->name,
+            'subject' => $request->subject,
+            'message' => $request->message,
+            'category_id' => $request->category_id,
+        ];
+        
+        $post = new POST;
+        $post->fill($savedata)->save();
+
+        return redirect('/index')->with('poststatus','新規投稿完了！');
+    }
 }
