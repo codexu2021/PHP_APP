@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Factories;
 
 class PostsTableSeeder extends Seeder
 {
-    use HasFactory;
     use PostFactory;
     use UserFactory;
     /**
