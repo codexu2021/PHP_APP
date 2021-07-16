@@ -14,7 +14,7 @@
         <h1 class="h4 mb-4 font-weight-bold">
             投稿の新規作成
         </h1>
-        <form method="POST" action="{{ route('bbs.store') }}">
+        <form method="POST" action="{{ route('store') }}">
             @csrf
             <fieldset class="mb-4">
                 <div class="form-group">
