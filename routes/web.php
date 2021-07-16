@@ -21,6 +21,7 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return view('hello');
 });
+Route::get('/create', 'PostController@create')->name('create');
 
 Route::resource('views', 'PostController', ['only' => ['index','create','store']]);
 
