@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-</head>
+extends('layouts.bbslayout')
+@section('title', 'LaravelPjt BBS 投稿の一覧ページ')
+@section('keywords', 'キーワード1,キーワード2,キーワード3')
+@section('description', '投稿一覧ページの説明文')
+@section('pageCss')
+<link href="/css/bbs/style.css" rel="stylesheet">
+@endsection
+@include('layouts.bbsheader')
+@section('content')
 <body>
-  <header>
-    @include('layouts.bbsheader')
-  </header>
   <container>
     <h1>掲示板試作品です</h1>
     <table class="table table-hover">
