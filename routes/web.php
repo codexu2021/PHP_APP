@@ -23,7 +23,7 @@ Route::get('hello', function () {
 });
 Route::get('create', 'PostController@create')->name('create');
 Route::get('show', 'PostController@show')->name('show');
-Route::store('store', 'PostController@store')->name('store');
+Route::get('store', 'PostController@store')->name('store');
 
 Route::resource('views', 'PostController', ['only' => ['index','create','store']]);
 
