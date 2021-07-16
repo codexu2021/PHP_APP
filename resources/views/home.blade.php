@@ -1,4 +1,4 @@
-extends('layouts.bbslayout')
+@extends('layouts.bbslayout')
 @section('title', 'LaravelPjt BBS 投稿の一覧ページ')
 @section('keywords', 'キーワード1,キーワード2,キーワード3')
 @section('description', '投稿一覧ページの説明文')
