@@ -21,6 +21,8 @@ Route::get('/hello', function () {
     return view('hello');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
+    return view('index');
+});
+
+Route::resource('bbs', 'PostsController', ['only' => ['index', 'show']]);

@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+    protected $fillabel = [
+        'name',
+        'subject',
+        'message',
+        'category_id'
+    ];
     use HasFactory;
     public function comments()
     {
