@@ -23,7 +23,7 @@ Route::get('/hello', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
-    return view('index');
+    return view('post.index');
 });
 
 Route::resource('/index', 'PostController', ['only' => ['index', 'show']]);
