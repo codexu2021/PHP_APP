@@ -27,7 +27,7 @@ class PostFactory extends Factory
             'created_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
             'updated_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
             'name' => $this->faker->name,
-            'comment' => $this->faker->realText(200),
+            'message' => $this->faker->realText(200),
             //
         ];
     }
