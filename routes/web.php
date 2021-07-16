@@ -22,8 +22,8 @@ Route::get('/hello', function () {
     return view('hello');
 });
 
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
     return view('post.index');
 });
-
-Route::resource('/index', 'PostController', ['only' => ['index', 'show']]);
