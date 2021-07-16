@@ -37,7 +37,7 @@
                 <td>{{ $post->name }}</td>
                 <td>{{ $post->subject }}</td>
                 <td>{!! nl2br(e(Str::limit($post->message, 100))) !!}
-                <p><a href="{{ action('PostsController@show', $post->id) }}" class="btn btn-primary btn-sm">詳細</a></p>
+                <p><a href="{{ route('show') }}" class="btn btn-primary btn-sm">詳細</a></p>
 
                 @if ($post->comments->count() >= 1)
                     <p><span class="badge badge-primary">コメント：{{ $post->comments->count() }}件</span></p>
