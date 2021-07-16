@@ -24,10 +24,10 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'created_at' => $faker->date('Y-m-d H:i:s', 'now'),
-            'updated_at' => $faker->date('Y-m-d H:i:s', 'now'),
-            'name' => $faker->name,
-            'comment' => $faker->realText(200),
+            'created_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
+            'updated_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
+            'name' => $this->faker->name,
+            'comment' => $this->faker->realText(200),
             //
         ];
     }
