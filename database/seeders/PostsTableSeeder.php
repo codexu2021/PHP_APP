@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Factories;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class PostsTableSeeder extends Seeder
 {
