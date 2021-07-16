@@ -1,11 +1,11 @@
-@extends('layout.bbslayout')
+@extends('bbslayout')
 @section('title', 'LaravelPjt BBS 投稿の一覧ページ')
 @section('keywords', 'キーワード1,キーワード2,キーワード3')
 @section('description', '投稿一覧ページの説明文')
 @section('pageCss')
 <link href="/css/bbs/style.css" rel="stylesheet">
 @endsection
-@include('layout.bbsheader')
+@include('bbsheader')
 @section('content')
 <div class="table-responsive">
     <table class="table table-hover">
@@ -49,4 +49,4 @@
 </div>
 </div>
 @endsection
-@include('layout.bbsfooter')
+@include('bbsfooter')
