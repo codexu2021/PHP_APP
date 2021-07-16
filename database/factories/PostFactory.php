@@ -28,6 +28,7 @@ class PostFactory extends Factory
             'updated_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
             'name' => $this->faker->name,
             'message' => $this->faker->realText(200),
+            'subject' =>$this->faker->randomLetter
             //
         ];
     }
