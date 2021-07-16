@@ -26,7 +26,7 @@ class PostRequest extends FormRequest
         return [
             'name'=>'required|max:40',
             'subject'=>'required|max:80',
-            'message'=>'requires|max:350',
+            'message'=>'required|max:350',
         ];
     }
     public function messages()
