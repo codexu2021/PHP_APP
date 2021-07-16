@@ -13,13 +13,15 @@ class PostController extends Controller
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('index', ['posts' => $posts]);
     }
+/*
     public function show(Request $request, $id)
 {
     $post = Post::findOrFail($id);
-    return view('bbs.show', [
+    return view('show', [
         'post' => $post,
     ]);
 }
+*/
     public function create()
     {
         return view('create');
