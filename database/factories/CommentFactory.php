@@ -28,7 +28,7 @@ class CommentFactory extends Factory
             'created_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
             'updated_at' => $this->faker->date('Y-m-d H:i:s', 'now'),
             'subject' => $this->faker->realText(16),    // 16文字のテキスト
-            'message' => $this->faker->realText(200),    // 200文字のテキスト
+            'comment' => $this->faker->realText(200),    // 200文字のテキスト
             'name' => $this->faker->name,    // 氏名
         ];
     }
