@@ -25,5 +25,5 @@ Route::get('/hello', function () {
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/index', function () {
-    return view('post.index');
+    return view('Post.index');
 });
