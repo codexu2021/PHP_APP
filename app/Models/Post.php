@@ -15,10 +15,10 @@ class Post extends Model
     use HasFactory;
     public function comments()
     {
-        return $this->hasMany('App\Comment');
+        return $this->hasMany('App\Model\Comment');
     }
     public function Category()
     {
-        return $this-BelongsTo('App\Category');
+        return $this-BelongsTo('App\Model\Category');
     }
 }
