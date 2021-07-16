@@ -9,7 +9,6 @@
 @section('content')
 <body>
   <container>
-    <h1>掲示板試作品です</h1>
     <table class="table table-hover">
         <thead>
         <tr>
