@@ -10,7 +10,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(10);
-        return view('bbs.index', ['posts' => $posts]);
+        return view('views.index', ['posts' => $posts]);
     }
     public function show(Request $request, $id)
 {
