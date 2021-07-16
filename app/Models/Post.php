@@ -11,7 +11,6 @@ class Post extends Model
         'name',
         'subject',
         'message',
-        'category_id'
     ];
     use HasFactory;
     public function comments()

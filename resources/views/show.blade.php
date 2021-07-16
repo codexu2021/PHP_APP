@@ -18,7 +18,7 @@
         </h1>
         <!-- 投稿情報 -->
         <div class="summary">
-            <p><span>{{ $post->name }}</span> / <time>{{ $post->updated_at->format('Y.m.d H:i') }}</time> / {{ $post->category->name }} / {{ $post->id }}</p>
+            <p><span>{{ $post->name }}</span> / <time>{{ $post->updated_at->format('Y.m.d H:i') }}</time> /  {{ $post->id }}</p>
         </div>
 
         <!-- 本文 -->

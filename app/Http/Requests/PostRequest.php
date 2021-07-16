@@ -27,7 +27,6 @@ class PostRequest extends FormRequest
             'name'=>'required|max:40',
             'subject'=>'required|max:80',
             'message'=>'requires|max:350',
-            'category_id'=>'required|integer',
         ];
     }
     public function messages()
@@ -39,8 +38,6 @@ class PostRequest extends FormRequest
             'subject.max' => '件名は80文字以内で入力してください',
             'message.required' => 'メッセージを入力してください',
             'message.max' => 'メッセージは350文字以内で入力してください',
-            'category_id.required' => 'カテゴリーを選択してください',
-            'category_id.integer' => 'カテゴリーの入力形式が不正です',
         ];
     }
 }

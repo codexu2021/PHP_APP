@@ -17,7 +17,6 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('is_deleted',4)->default('0');
-            $table->integer('category_id');
             $table->string('subject');
             $table->text('message');
             $table->string('name');
