@@ -22,4 +22,5 @@ Route::get('/hello', function () {
     return view('hello');
 });
 
-Route::resource('/index', 'PostController', ['only' => ['index', 'show']]);
+Route::resource('/index', 'PostController', ['only' => ['index', 'show','create','store']]);
+
