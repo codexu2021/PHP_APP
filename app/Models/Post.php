@@ -13,12 +13,4 @@ class Post extends Model
         'message',
     ];
     use HasFactory;
-    public function comments()
-    {
-        return $this->hasMany('App\Model\Comment');
-    }
-    public function Category()
-    {
-        return $this-BelongsTo('App\Model\Category');
-    }
 }
