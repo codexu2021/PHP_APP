@@ -22,7 +22,7 @@ Route::get('/hello', function () {
     return view('hello');
 });
 
-Route::resource('Post', 'PostController', ['only' => ['index','create','store']]);
+Route::resource('views', 'PostController', ['only' => ['index','create','store']]);
 
-Route::get('/index', [PostController::class, 'index']);
+Route::get('index', 'PostController@index');
 
