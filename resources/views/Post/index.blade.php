@@ -9,7 +9,7 @@
 @section('content')
 <div class="table-responsive">
     <div class="mt-4 mb-4">
-        <a href="{{ route('bbs.create') }}" class="btn btn-primary">
+        <a href="{{ route('Post.create') }}" class="btn btn-primary">
             投稿の新規作成
         </a>
     @if (session('poststatus'))
