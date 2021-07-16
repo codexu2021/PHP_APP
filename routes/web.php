@@ -14,9 +14,7 @@ use App\Http\Controllers;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'PostController@home')->name('home');
 
 Route::get('hello', function () {
     return view('hello');
@@ -27,5 +25,5 @@ Route::get('store', 'PostController@store')->name('store');
 
 Route::resource('views', 'PostController', ['only' => ['index','create','store']]);
 
-Route::get('index', 'PostController@index');
+Route::get('index', 'PostController@index')->name('index');
 

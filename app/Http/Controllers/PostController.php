@@ -14,6 +14,12 @@ class PostController extends Controller
         return view('index', ['posts' => $posts]);
     }
 
+    public function home()
+    {
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+        return view('home', ['posts' => $posts]);
+    }
+
     public function show(Request $request, $id)
 {
     $post = Post::findOrFail($id);
