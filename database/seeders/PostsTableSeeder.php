@@ -3,11 +3,13 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Factories;
 
 class PostsTableSeeder extends Seeder
 {
     use HasFactory;
+    use PostFactory;
+    use UserFactory;
     /**
      * Run the database seeds.
      *
